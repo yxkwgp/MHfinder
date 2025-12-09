@@ -1,8 +1,8 @@
-# MHfinder - Microhaplotype Analysis Module
+# MHfinder - Finding candidate ancestry inference microhaplotypes
 
 ## Project Overview
 
-This is a Python module for microhaplotype analysis, integrating three core functions:
+This is a Python module for finding candidate ancestry inference microhaplotypes, integrating three core functions:
 1. **Population-based MAF SNP filtering** - Filter SNPs based on Minor Allele Frequency (MAF)
 2. **Microhaplotype generation** - Generate microhaplotypes based on filtered SNPs
 3. **Stepwise conditional GWAS-based microhaplotype screening** - Screen candidate microhaplotypes using stepwise conditional GWAS method
