@@ -7,23 +7,6 @@ This is a Python module for microhaplotype analysis, integrating three core func
 2. **Microhaplotype generation** - Generate microhaplotypes based on filtered SNPs
 3. **Stepwise conditional GWAS-based microhaplotype screening** - Screen candidate microhaplotypes using stepwise conditional GWAS method
 
-## Project Structure
-
-```
-buildModule/
-├── core/                    # Core functionality modules
-│   ├── __init__.py         # Module initialization
-│   ├── utils.py            # General utility functions
-│   ├── snp_filter.py       # SNP filtering functionality
-│   ├── prep_MHs.py         # Microhaplotype generation functionality
-│   └── scgwas_screen.py     # Stepwise conditional GWAS screening functionality
-├── cli.py                  # Command line interface
-├── README.md               # Project documentation
-├── requirements.txt        # Dependency package list
-├── setup.py               # Installation configuration
-└── test_module.py         # Test module
-```
-
 ## Requirements
 
 - **PLINK 1.9**: PLINK 1.9 version must be installed, check version by running `plink --version`
