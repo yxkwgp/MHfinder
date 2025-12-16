@@ -14,14 +14,14 @@ This is a Python module for finding candidate ancestry inference microhaplotypes
 - **Python >= 3.7**: Python version 3.7 or higher required
 
 ### R Package Requirements
-- **haplo.stats**: Required R package for haplotype analysis
+- **haplo.stats**
   ```r
   install.packages("haplo.stats")
   ```
 
 ### Python Package Requirements
-- **pandas >= 1.0.0**: Data manipulation and analysis
-- **openpyxl >= 2.6.0**: Excel file support
+- **pandas >= 1.0.0**
+- **openpyxl >= 2.6.0**
 
 ## Installation Instructions
 
@@ -44,7 +44,7 @@ plink --version
 ```bash
 # Windows: Download from https://cran.r-project.org/bin/windows/base/
 # macOS: Download from https://cran.r-project.org/bin/macosx/
-# Linux: Use package manager (e.g., sudo apt-get install r-base)
+# Linux: Download from https://cran.r-project.org/bin/linux/
 
 # Verify installation
 Rscript --version
@@ -58,11 +58,16 @@ R
 install.packages("haplo.stats")
 ```
 
-### 4. Install Python Module
+### 4. Download and Install Python Module
 ```bash
+# Download the repository from GitHub
+# 1. Click the green "Code" button
+# 2. Select "Download ZIP"
+# 3. Extract the downloaded ZIP file to your desired location
+# 4. Navigate to the extracted folder
+cd MHfinder
 # Install module (will automatically check all dependencies)
 pip install -e .
-
 # If any dependency version doesn't meet requirements, installation will fail and display error message
 ```
 
