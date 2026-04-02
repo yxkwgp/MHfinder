@@ -43,20 +43,20 @@ def check_r_version():
                 if part.count('.') >= 2 and part.replace('.', '').isdigit():
                     major_version = int(part.split('.')[0])
                     minor_version = int(part.split('.')[1])
-                    if major_version < 3 or (major_version == 3 and minor_version < 6):
-                        print(f"Error: R version 3.6 or higher required, current version: {part}")
+                    if major_version < 4 or (major_version == 4 and minor_version < 3):
+                        print(f"Error: R version 4.3 or higher required, current version: {part}")
                         sys.exit(1)
                     break
             else:
-                print("Warning: Could not parse R version, please ensure R 3.6+ is installed")
+                print("Warning: Could not parse R version, please ensure R 4.3+ is installed")
         else:
-            print("Warning: Could not determine R version, please ensure R 3.6+ is installed")
+            print("Warning: Could not determine R version, please ensure R 4.3+ is installed")
             
         print(f"R version check passed: {version_output}")
         
     except (subprocess.CalledProcessError, FileNotFoundError):
         print("Error: R not installed or not accessible")
-        print("Please install R 3.6 or higher and ensure it's in your PATH")
+        print("Please install R 4.3 or higher and ensure it's in your PATH")
         sys.exit(1)
 
 def check_r_package():
@@ -93,28 +93,41 @@ setup(
         "Topic :: Scientific/Engineering :: Bio-Informatics",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     install_requires=[
-        "pandas>=1.0.0",
-        "openpyxl>=2.6.0",
+        "pandas>=2.0.0",
+        "openpyxl>=3.1.0",
     ],
     # Installation checks
     setup_requires=[
-        "pandas>=1.0.0",
-        "openpyxl>=2.6.0",
+        "pandas>=2.0.0",
+        "openpyxl>=3.1.0",
     ],
     entry_points={
         "console_scripts": [
             "snp-filter-based-pop=cli:snp_filter_main",
             "prep-MHs=cli:prep_mhs_main", 
             "screen-MHs-by-SCGWAS=cli:screen_mhs_main",
+            "MLE_for_MHs_genotypes=extra.cli_entrypoints:mle_mh_genotypes_cli",
+            "Draw_manhattan_qq_of_SCGWAS=extra.cli_entrypoints:plot_scgwas_manhattan_qq_cli",
+            "Draw_PCA_of_MHs=extra.cli_entrypoints:plot_mh_pca_cli",
+            "LOOCV_of_MHs=extra.cli_entrypoints:loocv_mhs_cli",
+            "Validation_of_MHs_using_test_set=extra.cli_entrypoints:validate_mhs_testset_cli",
+            "Organize_MHs_infomation_table=extra.cli_entrypoints:organize_mh_info_table_cli",
+            "Stat_allele_freq_of_MHs=extra.cli_entrypoints:stat_mh_allele_freq_cli",
+            "Stat_MHs_indexSNPs_info=extra.cli_entrypoints:stat_mh_indexsnps_cli",
+            "Calculate_Ae_of_MHs=extra.cli_entrypoints:calc_mh_ae_cli",
+            "Naive_Bayes_random_kept_MHs=extra.cli_entrypoints:naivebayes_random_kept_mhs_cli",
+            "Filter_MH_genotype_file_based_MHlist=extra.cli_entrypoints:filter_mh_genotype_by_list_cli",
+            "Get_MHlist_with_max_In=extra.cli_entrypoints:get_mhlist_max_in_cli",
+            "Prep_file_for_Infocalc=extra.cli_entrypoints:prep_infocalc_input_cli",
+            "AUC_ACC_decline_with_n_MHs=extra.cli_entrypoints:auc_acc_decline_with_n_mhs_cli",
         ],
     },
     py_modules=["cli"],
