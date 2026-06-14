@@ -1,0 +1,19 @@
+name: mhfinder
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.8
+  - pandas>=2.0
+  - openpyxl>=3.1
+  - numpy
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - r-base>=4.3
+  - r-haplo.stats
+  - plink=1.90b6.21
+  - pip
+  - pip:
+      - -e .

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use MHfinder, please cite the associated manuscript and this software release."
+title: "MHfinder: a stepwise conditional GWAS tool for genome-wide microhaplotype identification and ancestry-informative panel construction"
+type: software
+authors:
+  - family-names: Yu
+    given-names: Di
+  - family-names: Albujja
+    given-names: Mohammed H.
+  - family-names: Fu
+    given-names: Guangping
+  - family-names: Hadi
+    given-names: Sibte
+  - family-names: Wang
+    given-names: Qian
+  - family-names: Liu
+    given-names: Fan
+repository-code: "https://github.com/Fun-Gene/MHfinder"
+license: GPL-3.0-only
+version: 1.0.0
+keywords:
+  - bioinformatics
+  - microhaplotype
+  - ancestry inference
+  - population genetics
+  - GWAS
+  - PLINK
