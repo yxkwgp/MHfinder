@@ -1,6 +1,6 @@
 # MHfinder
 
-**MHfinder** is an open-source Python/R workflow for genome-wide discovery and evaluation of ancestry-informative microhaplotypes (MHs) from population genomic data. It was developed to support reproducible microhaplotype marker-panel design from PLINK-formatted datasets such as the 1000 Genomes Project.
+**MHfinder** is an open-source Python/R workflow for genome-wide microhaplotype identification and ancestry-informative panel construction from population genomic data. It was developed to support reproducible microhaplotype marker-panel design from PLINK-formatted datasets such as the 1000 Genomes Project.
 
 The pipeline integrates:
 
