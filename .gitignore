@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+
+# Large local analysis outputs; curated panel tables under results/panel_tables are intentionally tracked.
+results/random_marker_loss/
+results/tmp/
+SCGWAS_*
+tmp.*
+tem_file_for_calculate_*
