@@ -1,4 +1,0 @@
-chr|SNP1-SNP2...SNPn
-1|rsToy001-rsToy002-rsToy003
-1|rsToy004-rsToy005-rsToy006
-2|rsToy007-rsToy008-rsToy009

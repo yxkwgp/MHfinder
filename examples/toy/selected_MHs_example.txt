@@ -1,6 +1,0 @@
->AFR_1_1
-*rsToy001	1	Ae(AFR)=3.20	Ae(EUR)=2.10	Ae(EAS)=2.40
-rsToy001	rsToy002	rsToy003
->EUR_1_1
-*rsToy004	1	Ae(AFR)=2.20	Ae(EUR)=3.40	Ae(EAS)=2.10
-rsToy004	rsToy005	rsToy006
